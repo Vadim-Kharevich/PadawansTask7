@@ -6,8 +6,16 @@ namespace PadawansTask7
     {
         public static void OrderStringsByLength(string[] array)
         {
-            // put your code here
-            throw new NotImplementedException();
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if (array[i].Length > array[i + 1].Length)
+                {
+                    string str = array[i + 1];
+                    array[i + 1] = array[i];
+                    array[i] = str;
+                    i = -1;
+                }
+            }
         }
     }
 }

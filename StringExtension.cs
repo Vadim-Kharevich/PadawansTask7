@@ -19,6 +19,9 @@ namespace PadawansTask7
                     array[i] = str;
                     i = -1;
                 }
+            }
+            for (int i = 0; i < array.Length; i++)
+            {
                 if (array[i] == null)
                 {
                     throw new ArgumentNullException();
